@@ -1,0 +1,16 @@
+{
+  "title": "¿Por qué elegir mis servicios?",
+  "text": "Resultados comprobados, Cientos de clientes satisfechos con sitios web que cumplen y superan sus metas. Más de 5 años en el sector del diseño web. Innovación constante, me mantengo actualizado con las últimas tendencias y tecnologías web.",
+  "section": [
+    {
+      "title": "Pagina Web",
+      "content": "Una página web moderna y minimalista con navegación intuitiva, que presenta contenido visual atractivo y se adapta perfectamente a dispositivos móviles. Brinda una experiencia de usuario fluida con tiempos de carga rápidos y una interfaz limpia..",
+      "icon": "notes.svg"
+    },
+    {
+      "title": "Tienda en linea",
+      "content": "Una tienda en línea elegante y fácil de usar, con productos organizados en categorías claras, opciones de filtrado avanzadas, contando además con un proceso de compra rápido y seguro, ofreciendo integraciones de pago confiables y soporte al cliente en tiempo real.",
+      "icon": "notes.svg"
+    }
+  ]
+}
