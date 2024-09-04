@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { notification } from "antd";
+import emailjs from 'emailjs-com';
+
 
 interface IValues {
   name: string;
@@ -27,20 +29,16 @@ export const useForm = (validate: { (values: IValues): IValues }) => {
     const values = formState.values;
     const errors = validate(values);
     setFormState((prevState) => ({ ...prevState, errors }));
-
+    const serviceID = 'service_d7labja'; 
+    const templateID = 'template_o16obfr'; 
+    const userID = '2MAFNItWxaEBo-go4'; 
     const url = ""; // Fill in your API URL here
 
     try {
       if (Object.values(errors).every((error) => error === "")) {
-        const response = await fetch(url, {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(values),
-        });
+        const response = await emailjs.sendForm(serviceID, templateID, event.target, userID);
 
-        if (!response.ok) {
+        if (response.status !== 200) {
           notification["error"]({
             message: "Error",
             description:
