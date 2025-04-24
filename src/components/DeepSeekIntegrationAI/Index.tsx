@@ -65,7 +65,7 @@ const DeepSeekIntegration: React.FC = () => {
 
   return (
     <div className="deepseek-container">
-      <h3>Integracion AI en chat</h3>
+      <h3>AI a tu servicio chat</h3>
       
       <form onSubmit={handleSubmit}>
         <textarea
