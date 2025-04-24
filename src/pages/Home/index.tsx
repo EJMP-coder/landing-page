@@ -6,6 +6,7 @@ import MissionContent from "../../content/MissionContent.json";
 import ProductContent from "../../content/ProductContent.json";
 import ContactContent from "../../content/ContactContent.json";
 import IntegracionToAi from "../../content/IntegracionToAi.json";
+import DeepSeekIntegration from "../../components/DeepSeekIntegrationAI/Index";
 
 const Contact = lazy(() => import("../../components/ContactForm"));
 const MiddleBlock = lazy(() => import("../../components/MiddleBlock"));
@@ -59,6 +60,7 @@ const Home = () => {
         icon="product-launch.svg"
         id="mission"
       />
+      <DeepSeekIntegration/>
       <Contact
         title={ContactContent.title}
         content={ContactContent.text}
