@@ -47,7 +47,7 @@ const ContentBlock = ({
           </Col>
           <Col lg={11} md={11} sm={11} xs={24}>
             <ContentWrapper>
-              <h6>{t(title)}</h6>
+              {id === "intro" ? <h1>{t(title)}</h1> : <h2>{t(title)}</h2>}
               <Content>{t(content)}</Content>
               {direction === "right" ? (
                 <ButtonWrapper>

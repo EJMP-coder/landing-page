@@ -3,7 +3,18 @@ import styled from "styled-components";
 
 export const ContentSection = styled("section")`
   position: relative;
-  padding: 10rem 0 8rem;
+  padding: 8rem 0 6rem;
+
+  img {
+    border-radius: 20px;
+    box-shadow: 0 18px 40px -10px rgba(51, 78, 104, 0.12);
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+  }
+
+  img:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 24px 48px -12px rgba(72, 159, 181, 0.2);
+  }
 
   @media only screen and (max-width: 1024px) {
     padding: 4rem 0 4rem;
@@ -12,6 +23,7 @@ export const ContentSection = styled("section")`
 
 export const Content = styled("p")`
   margin: 1.5rem 0 2rem 0;
+  color: #486581;
 `;
 
 export const StyledRow = styled(Row)`
@@ -32,19 +44,26 @@ export const ServiceWrapper = styled("div")`
   display: flex;
   justify-content: space-between;
   max-width: 100%;
+
+  img {
+    border-radius: 12px;
+    box-shadow: none;
+  }
 `;
 
 export const MinTitle = styled("h6")`
   font-size: 15px;
-  line-height: 1rem;
+  line-height: 1.2rem;
   padding: 0.5rem 0;
   text-transform: uppercase;
-  color: #000;
-  font-family: "Motiva Sans Light", sans-serif;
+  color: #243B53;
+  letter-spacing: 0.05em;
+  font-family: "Motiva Sans Bold", sans-serif;
 `;
 
 export const MinPara = styled("p")`
-  font-size: 13px;
+  font-size: 14px;
+  color: #486581;
 `;
 
 export const ButtonWrapper = styled("div")`

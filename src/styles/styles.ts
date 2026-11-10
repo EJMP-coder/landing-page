@@ -27,27 +27,38 @@ export const Styles = createGlobalStyle`
         padding:0;
         border: 0;
         outline: 0;
-        background: #fff;
+        background-color: #F4F7FA;
+        background-image: 
+            radial-gradient(ellipse 80% 50% at 50% -10%, rgba(186, 230, 253, 0.55), transparent),
+            radial-gradient(ellipse 60% 40% at 85% 35%, rgba(167, 243, 208, 0.35), transparent),
+            radial-gradient(ellipse 60% 45% at 15% 75%, rgba(199, 210, 254, 0.4), transparent);
+        color: #334E68;
         overflow-x: hidden;
     }
 
     a:hover {
-        color: #18216d;
+        color: #489FB5;
     }
 
     input,
     textarea {
-        border-radius: 4px;
-        border: 0;
-        background: rgb(241, 242, 243);
+        border-radius: 12px;
+        border: 1px solid #D1E2F0;
+        background: #F0F6FA;
+        color: #243B53;
         transition: all 0.3s ease-in-out;  
         outline: none;
         width: 100%;  
         padding: 1rem 1.25rem;
 
+        ::placeholder {
+            color: #829AB1;
+        }
+
         :focus-within {
-            background: none;
-            box-shadow: #2e186a 0px 0px 0px 1px;
+            background: #FFFFFF;
+            border-color: #6298BC;
+            box-shadow: 0 0 0 3px rgba(98, 152, 188, 0.2);
         }
     }
 
@@ -58,9 +69,10 @@ export const Styles = createGlobalStyle`
     h5,
     h6 {
         font-family: 'Motiva Sans Bold', serif;
-        color: #18216d;
+        color: #243B53;
         font-size: 56px;
         line-height: 1.18;
+        letter-spacing: -0.02em;
 
         @media only screen and (max-width: 890px) {
           font-size: 47px;
@@ -72,9 +84,9 @@ export const Styles = createGlobalStyle`
     }
 
     p {
-        color: #18216d;
+        color: #486581;
         font-size: 21px;        
-        line-height: 1.41;
+        line-height: 1.55;
     }
 
     h1 {
@@ -84,10 +96,10 @@ export const Styles = createGlobalStyle`
     a {
         text-decoration: none;
         outline: none;
-        color: #2E186A;
+        color: #3B7A9E;
 
         :hover {
-            color: #2e186a;
+            color: #489FB5;
         }
     }
     
@@ -99,11 +111,17 @@ export const Styles = createGlobalStyle`
         text-align: center;
     }
 
+    .ant-drawer-content {
+        background-color: #F8FAFC !important;
+        color: #243B53;
+    }
+
     .ant-drawer-body {
         display: flex;
         flex-direction: column;
         text-align: left;
         padding-top: 1.5rem;
+        background-color: #F8FAFC;
     }
 
     .ant-drawer-content-wrapper {

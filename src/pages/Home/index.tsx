@@ -23,7 +23,7 @@ const Home = () => {
         title={IntroContent.title}
         content={IntroContent.text}
         button={IntroContent.button}
-        icon="developer.svg"
+        icon="intro-corporate.jpg"
         id="intro"
       />
       <MiddleBlock
@@ -36,29 +36,29 @@ const Home = () => {
         title={AboutContent.title}
         content={AboutContent.text}
         section={AboutContent.section}
-        icon="graphs.svg"
+        icon="about-services.jpg"
         id="about"
       />
       <ContentBlock
         direction="right"
         title={MissionContent.title}
         content={MissionContent.text}
-        icon="product-launch.svg"
+        icon="mission-sales.jpg"
         id="mission"
       />
       <ContentBlock
         direction="left"
         title={ProductContent.title}
         content={ProductContent.text}
-        icon="waving.svg"
+        icon="product-ecommerce.jpg"
         id="product"
       />
       <ContentBlock
         direction="right"
         title={IntegracionToAi.title}
         content={IntegracionToAi.text}
-        icon="product-launch.svg"
-        id="mission"
+        icon="ai-integration.jpg"
+        id="ai"
       />
       <DeepSeekIntegration/>
       <Contact

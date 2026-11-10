@@ -1,33 +1,115 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/img/icons/logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta name="description"
-      content="Landing page." />
-    <meta name="keywords"
-      content=" landing page ." />
-    <meta property="og:title" content="Landing - React " />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://TuPortalWeb/" />
-    <meta property="og:description"
-      content="Landing page ." />
-    <meta name="robots" content="index, follow" />
-    <meta property="og:locale" content="en_EN" />
-    <meta property="og:site_name" content="TuPortalWeb" />
-    <meta property="og:url" content="https://TuPortalWeb/" />
-    <meta property="twitter:title" content="Landing- React" />
-    <meta property="twitter:description"
-      content=" React landing page ." />
-    <meta property="twitter:site" content="https://TuPortalWeb/" />
+    <meta name="theme-color" content="#F4F7FA" />
 
-    <title>TuPortalWeb</title>
+    <!-- Cabeceras de Seguridad Web -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https://api.openai.com https://formsubmit.co https://api.emailjs.com; base-uri 'self'; form-action 'self' https://formsubmit.co;"
+    />
+
+    <!-- SEO Principal -->
+    <title>TuPortalWeb | Diseño de Páginas Web, E-Commerce e IA para Empresas</title>
+    <meta
+      name="description"
+      content="Transforma tu presencia en línea con servicios profesionales de diseño y desarrollo de páginas web corporativas, tiendas online (E-commerce) e integración de Inteligencia Artificial. Resultados garantizados, optimización SEO y soporte 24/7."
+    />
+    <meta
+      name="keywords"
+      content="diseño web para empresas, creación de páginas web profesionales, desarrollo web corporativo, tiendas en línea, ecommerce seguro, integración inteligencia artificial web, chatbot empresarial, posicionamiento SEO, Talavera de la Reina, Toledo, España"
+    />
+    <meta name="author" content="Edwin Medina - TuPortalWeb" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <link rel="canonical" href="https://tuportalweb.com/" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <!-- Open Graph / Facebook / LinkedIn -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:site_name" content="TuPortalWeb" />
+    <meta property="og:title" content="TuPortalWeb | Diseño de Páginas Web, E-Commerce e IA para Empresas" />
+    <meta
+      property="og:description"
+      content="Servicios de creación, administración y diseño de páginas web empresariales, tiendas online seguras e integración de Inteligencia Artificial con soporte continuo 24/7."
+    />
+    <meta property="og:url" content="https://tuportalweb.com/" />
+    <meta property="og:image" content="%PUBLIC_URL%/img/svg/intro-corporate.jpg" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@ej_medina" />
+    <meta name="twitter:title" content="TuPortalWeb | Diseño Web Corporativo, E-Commerce e IA" />
+    <meta
+      name="twitter:description"
+      content="Creación y gestión de páginas web profesionales, tiendas en línea seguras e Inteligencia Artificial para impulsar las ventas de tu empresa."
+    />
+    <meta name="twitter:image" content="%PUBLIC_URL%/img/svg/intro-corporate.jpg" />
+
+    <!-- Datos Estructurados JSON-LD (Schema.org) para SEO Empresarial -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "TuPortalWeb - Soluciones Web e IA Empresarial",
+        "url": "https://tuportalweb.com/",
+        "image": "https://tuportalweb.com/img/svg/intro-corporate.jpg",
+        "description": "Servicios profesionales de creación, administración y diseño de páginas web corporativas, tiendas en línea (E-commerce) e integración de Inteligencia Artificial para empresas.",
+        "email": "lord_edwin@hotmail.com",
+        "telephone": "+34642571418",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Talavera de la Reina",
+          "addressRegion": "Toledo",
+          "addressCountry": "ES"
+        },
+        "openingHours": "Mo-Su 00:00-23:59",
+        "sameAs": [
+          "https://github.com/EJMP-coder",
+          "https://twitter.com/ej_medina",
+          "https://www.linkedin.com/in/Edwin-Medina-Perez/"
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Servicios Digitales para Empresas",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Diseño y Desarrollo de Páginas Web Corporativas",
+                "description": "Páginas web modernas, responsivas y optimizadas para SEO con gestión continua y soporte técnico."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Desarrollo de Tiendas en Línea (E-Commerce)",
+                "description": "Tiendas online seguras con catálogo organizado, pasarelas de pago confiables y soporte en tiempo real."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Integración de Inteligencia Artificial Web",
+                "description": "Chatbots de atención 24/7, automatización de procesos, análisis predictivo y refuerzo de seguridad."
+              }
+            }
+          ]
+        }
+      }
+    </script>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <noscript>Necesitas habilitar JavaScript para visualizar esta aplicación.</noscript>
     <div id="root"></div>
-    
   </body>
 </html>

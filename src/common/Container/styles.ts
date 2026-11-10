@@ -9,7 +9,7 @@ export const StyledContainer = styled("div")<{
   margin-right: auto;
   margin-left: auto;
   padding: 0 60px;
-  border-top: ${(p) => (p.border ? "1px solid #CDD1D4" : "")};
+  border-top: ${(p) => (p.border ? "1px solid #C5D9E8" : "")};
 
   @media only screen and (max-width: 1024px) {
     max-width: calc(100% - 68px);

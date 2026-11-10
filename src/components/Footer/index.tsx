@@ -66,7 +66,11 @@ const Footer = ({ t }: { t: TFunction }) => {
               <Large to="/">{t("Software Principios")}</Large>
             </Col>
             <Col lg={6} md={6} sm={12} xs={12}>
-              <a href="https://wa.me/+34642571418?text=Hola,%20quiero%20saber%20más%20sobre%20sus%20productos">
+              <a
+                href="https://wa.me/+34642571418?text=Hola,%20quiero%20saber%20más%20sobre%20sus%20productos"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
               <Chat>{t("Centro de soporte")}</Chat>
               <Chat>{t("Soporte al consumidor")}</Chat>
               </a>

@@ -1,6 +1,6 @@
 {
-  "short_name": "Software",
-  "name": "Software - React Template",
+  "short_name": "TuPortalWeb",
+  "name": "TuPortalWeb | Diseño Web, E-Commerce e IA Empresarial",
   "icons": [
     {
       "src": "img/icons/logo.png",
@@ -20,6 +20,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#243B53",
+  "background_color": "#F4F7FA"
 }
