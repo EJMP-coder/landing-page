@@ -1,7 +1,7 @@
 // DeepSeekIntegration.tsx
 import React, { useState, useRef } from 'react';
 import axios, { AxiosError } from 'axios';
-import { DeepSeekRequest, DeepSeekResponse, ApiError } from "./types";
+import { DeepSeekRequest, DeepSeekResponse } from "./types";
 import {
   DeepSeekContainer,
   Subtitle,
